@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	color: rgb(209, 203, 193);
+	color: #eee;
 	background-color: rgb(38, 39, 38);
 }
 
@@ -48,13 +48,13 @@ body {
 
 	border: none;
 	font-size: 2rem;
-	background-color: rgb(45, 46, 46);
-	color: rgb(209, 203, 193);
+	color: #000;
 	padding: 2rem 3rem 2rem 3rem;
 }
 
 .btn:hover {
 	background-color: rgb(80, 79, 79);
+	color: #fff;
 }
 
 .number {
@@ -95,6 +95,7 @@ body {
 	border: none;
 	border: 3px solid #3f4141;
 	text-align: center;
+	color: #000;
 	font-size: 6rem;
 }
 
