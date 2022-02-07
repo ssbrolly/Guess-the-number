@@ -45,6 +45,10 @@ const correct = () => {
 	startGuessing.innerHTML = 'Correct!';
 	highScore.push(scoreNum);
 
+	highScore.forEach(el => {
+		el === 0 ? highScore.pop(el) : el;
+	});
+
 	let highestScore = Math.max(...highScore);
 	highscore.innerHTML = highestScore;
 	scoreNum = 0;
