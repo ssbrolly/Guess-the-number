@@ -8,15 +8,16 @@ const startGuessing = document.querySelector('.start-guessing');
 let randomNum = Math.round(Math.random() * 20) + 1;
 console.log(randomNum);
 
-input.addEventListener('keypress', () => {
-	console.log(input.value);
-	if (input.value.length > 1) {
-		input.value = input.value.slice(0, 2);
+input.addEventListener('keypress', e => {
+	if (e.key === 'Enter') {
+		return null;
+	} else if (input.value.length >= 0) {
+		input.value = input.value.slice(0, 1);
+		console.log(input.value.length);
 	}
 });
 
 const correctNum = () => {
-	console.log(input.value);
 	let int = parseInt(input.value);
 
 	if (randomNum > int) {
